@@ -1,6 +1,6 @@
 %define module	XML-RSS
 %define name	perl-%{module}
-%define version 1.22
+%define version 1.31
 %define release %mkrel 1
 
 Name:		%{name}
@@ -10,7 +10,7 @@ Summary:	Creates and updates RSS files
 License:	GPL
 Group:		Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	perl(Test::Manifest)
