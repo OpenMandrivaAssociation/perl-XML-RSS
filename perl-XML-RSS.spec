@@ -19,7 +19,6 @@ BuildRequires:  perl(DateTime::Format::Mail)
 BuildRequires:  perl(Test::Pod::Coverage)
 BuildRequires:  perl(HTML::Entities)
 BuildArch:	    noarch
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 Creates and updates RSS files.
