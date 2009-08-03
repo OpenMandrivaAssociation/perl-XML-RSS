@@ -1,17 +1,16 @@
-%define module	XML-RSS
-%define name	perl-%{module}
-%define version 1.44
-%define release %mkrel 1
+%define upstream_name	 XML-RSS
+%define upstream_version 1.44
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Creates and updates RSS files
 License:	GPL
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.gz
-BuildRequires:	perl-devel
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	perl(Test::Manifest)
 BuildRequires:  perl(DateTime::Format::W3CDTF)
@@ -19,14 +18,14 @@ BuildRequires:  perl(DateTime::Format::Mail)
 BuildRequires:  perl(Test::Pod::Coverage)
 BuildRequires:  perl(HTML::Entities)
 BuildArch:	    noarch
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
+BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Creates and updates RSS files.
 This module supports versions 0.9, 0.91 and 1.0 of RSS.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 chmod ogu-x README Changes
 
 %build
@@ -48,5 +47,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{_mandir}/*/*
 %{perl_vendorlib}/XML
-
-
