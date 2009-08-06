@@ -1,5 +1,5 @@
 %define upstream_name	 XML-RSS
-%define upstream_version 1.44
+%define upstream_version 1.45
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
