@@ -1,15 +1,15 @@
 %define upstream_name	 XML-RSS
-%define upstream_version 1.49
+%define upstream_version 1.54
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Creates and updates RSS files
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/XML-RSS-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
@@ -150,4 +150,5 @@ make test
 * Thu Apr 22 2004 Michael Scherer <misc@mandrake.org> 1.04-1mdk
 - New release 1.04
 - [DIRM]
+
 
