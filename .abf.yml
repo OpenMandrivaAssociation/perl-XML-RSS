@@ -1,4 +1,5 @@
 removed_sources:
   XML-RSS-1.49.tar.gz: ec0a04e8d37a2f77ff56c2ab380f443807d37830
-sources:
   XML-RSS-1.54.tar.gz: 59f1e48980cfdaa85860f19fd8849417a12457b9
+sources:
+  XML-RSS-1.55.tar.gz: dcc1bd3d77234432c27e16516b72ad8221653167
