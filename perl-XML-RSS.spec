@@ -1,16 +1,14 @@
 %define upstream_name	 XML-RSS
-%define upstream_version 1.65
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.65
+Release:	2
 
 Summary:	Creates and updates RSS files
 
 License:	GPL
 Group:		Development/Perl
 Url:		https://github.com/shlomif/perl-XML-RSS
-Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-RSS-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-RSS-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ Creates and updates RSS files.
 This module supports versions 0.9, 0.91 and 1.0 of RSS.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 chmod ogu-x README Changes
 
 %build
